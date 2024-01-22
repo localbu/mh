@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html{
+    overflow-x:hidden;
+}
+body{
+    max-width:100vw;
+    overflow-x:auto;
+}
+.navbar-fixed{
+    @apply fixed z-[9999]  bg-opacity-80 ;
+    backdrop-filter: blur-5px;
+    box-shadow: inset 0 -1px 0 0 rgb(0, 0, 0, 0.2);
+    
+}
+.humberger-line{
+    @apply  w-[30px] h-[2px] block bg-black  my-2;
+}
+.active > span:nth-child(1){
+    @apply rotate-45;
+}
+.active > span:nth-child(2){
+    @apply scale-0;
+}
+.active > span:nth-child(3){
+    @apply -rotate-45;
+}
+@media(min-width:1024px){
+    .coba-shadow{
+        box-shadow:0px 20px 20px 20px;
+    }
+}
+.bitch{
+    align-items:center;
+}
+
